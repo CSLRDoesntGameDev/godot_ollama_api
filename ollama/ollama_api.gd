@@ -16,10 +16,6 @@ var current_model : Dictionary = {} :
 signal models_updated
 signal model_changed
 
-func _ready() -> void:
-	ip = "192.168.0.107"
-	await _pull_models()
-
 func _create_ip_string(): return "http://" + ip + ":" + str(port)
 
 func _pull_models():
